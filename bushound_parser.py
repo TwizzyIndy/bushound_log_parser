@@ -117,12 +117,7 @@ class BusHoundParser:
                         
                         # Only process continuation if the main entry matches filters
                         if current_entry.get('matches_filter', True):
-                            # For single-file dumping: append to current entry
-                            # Only append to main entry if it doesn't have a repetition number
-                            if '(' not in current_entry['cmd_info']:
-                                current_entry['hex_data'] += additional_hex
-                            
-                            # For command-based dumping: create separate entry for this offset
+                            # Create separate entry for this offset (for command-based dumping)
                             offset_entry = {
                                 'device_id': current_entry['device_id'],
                                 'phase': current_entry['phase'],
