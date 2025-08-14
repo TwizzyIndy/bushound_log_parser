@@ -1,0 +1,27 @@
+Bus Hound 7.04 capture. Complements of www.perisoft.net
+
+Sm-A127F Read Info
+
+  Device - Device ID (followed by the endpoint for USB devices)
+            (3) Intel(R) USB 3.10 eXtensible Host Controller - 1.20 (Microsoft)
+            (4) Intel(R) USB 3.10 eXtensible Host Controller - 1.20 (Microsoft)
+            (6) USB Root Hub (USB 3.0)
+            (7) USB Root Hub (USB 3.0)
+            (9) USB Composite Device
+            (43) UsbDk device
+            (44) SAMSUNG Mobile USB CDC Composite Device 
+            (45) SAMSUNG Mobile USB Modem
+            (53) 
+  Phase  - Phase Type
+            IN    Data in transfer           
+            OUT   Data out transfer          
+  Data   - Hex dump of the data transferred
+  Descr  - Description of the phase
+  Cmd... - Position in the captured data
+
+
+Device  Phase  Data         Description       Cmd.Phase.Ofs(rep)
+------  -----  -----------  ----------------  ------------------
+  43.2  OUT    b4 65 c5 1f  .e..                   177.1.0        
+               10 0e 96 47  ...G                   177.1.4        
+               ff ff        ..                     177.1.8        
